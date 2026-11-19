@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171914">
+  <meta name="description" content="Find the films you love. Book your next big-screen night with Reelhouse.">
+  <title>Reelhouse — your next big-screen moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Big stories. Bigger screens. <a href="#movies">See what’s playing <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Reelhouse home"><span class="brand-mark"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M5 3.9 18.2 11 5 18.1V3.9Z" fill="currentColor"/><path d="M3.3 2.5h15.4v17H3.3z" stroke="currentColor" stroke-width="1.6" rx="2"/></svg></span><span>reelhouse<span class="brand-period">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link active" href="#movies">Movies</a><a class="nav-link" href="#experience">The experience</a><a class="nav-link" href="#offers">Offers</a></nav>
+    <div class="header-actions">
+      <button class="city-button" id="cityButton" type="button" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10.3c0 5.25-7 11-7 11s-7-5.75-7-11a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg><span id="cityName">Delhi NCR</span><svg class="chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="city-menu" id="cityMenu" hidden></div>
+      <button class="my-bookings" id="myBookingsButton" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4.8h12a1.8 1.8 0 0 1 1.8 1.8V20l-7.8-3.7L4.2 20V6.6A1.8 1.8 0 0 1 6 4.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 9h7M8.5 12h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>My tickets</span></button>
+      <a class="avatar" href="#experience" aria-label="Your Reelhouse experience">R</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero" aria-label="Featured movie">
+      <div class="hero-image" id="heroImage"></div><div class="hero-shade"></div>
+      <div class="hero-inner page-wrap">
+        <div class="hero-copy"><div class="eyebrow light"><span class="live-pip"></span> THE BIG SCREEN PICK <span class="eyebrow-line"></span> <span id="heroLanguage">HINDI · DRAMA</span></div>
+          <h1 id="heroTitle">Some stories<br>find their way <em>home.</em></h1>
+          <p class="hero-description" id="heroDescription">A little lost, a little luminous. The kind of film that stays with you after the credits.</p>
+          <div class="hero-meta"><span id="heroRating">★ 8.7 <span class="muted-light">/ 10</span></span><span class="meta-divider"></span><span id="heroDuration">2h 08m</span><span class="meta-divider"></span><span id="heroGenres">Drama · Romance</span></div>
+          <div class="hero-ctas"><button class="button button-lime" id="heroBook" type="button">Get tickets <span aria-hidden="true">↗</span></button><button class="button button-glass" id="heroTrailer" type="button"><span class="play-icon">▶</span> The story</button></div>
+        </div>
+        <div class="hero-note"><div class="hero-note-icon">✦</div><span>Made for<br><strong>the big screen.</strong></span></div>
+        <div class="hero-index"><span class="hero-index-current">01</span><span class="hero-index-line"></span><span>09</span></div>
+      </div>
+      <div class="hero-bottom"><div class="page-wrap hero-bottom-inner"><span>CURATED FOR YOUR CITY</span><div class="hero-bottom-rule"></div><span class="scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div></div>
+    </section>
+
+    <section class="movies-section page-wrap" id="movies">
+      <div class="section-heading"><div><div class="eyebrow dark"><span class="eyebrow-star">✳</span> THE GOOD STUFF</div><h2>Now showing<span class="heading-period">.</span></h2><p class="section-subtitle">The films everyone’s talking about — and the ones you’ll wish you found sooner.</p></div><a class="view-all" href="#movieGrid">Browse all films <span aria-hidden="true">↗</span></a></div>
+      <div class="discovery-row"><div class="filter-pills" id="filterPills" role="group" aria-label="Filter movies"><button class="filter-pill active" data-filter="All films" type="button">All films <span class="pill-count" id="allCount">09</span></button><button class="filter-pill" data-filter="Drama" type="button">Drama</button><button class="filter-pill" data-filter="Action" type="button">Action</button><button class="filter-pill" data-filter="Comedy" type="button">Comedy</button><button class="filter-pill" data-filter="Romance" type="button">Romance</button><button class="filter-pill" data-filter="Thriller" type="button">Thriller</button></div><label class="search-box"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><input id="movieSearch" type="search" placeholder="Find your film" aria-label="Search movies"><kbd>⌘ K</kbd></label></div>
+      <div class="movie-grid" id="movieGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>No films found just yet.</h3><p>Try a different title or explore another genre.</p><button class="button button-dark" id="resetFilters" type="button">Show all films</button></div>
+      <div class="catalogue-footer"><span class="catalogue-dot"></span><span id="catalogueLabel">Showing 9 hand-picked films</span><span class="catalogue-spacer"></span><span>THERE’S ALWAYS SOMETHING GOOD PLAYING.</span></div>
+    </section>
+
+    <section class="interlude" id="experience"><div class="interlude-art"></div><div class="interlude-shade"></div><div class="page-wrap interlude-inner"><div class="interlude-mark">✳</div><div class="interlude-copy"><div class="eyebrow light">A LITTLE MORE MAGIC</div><h2>It’s not just a movie.<br>It’s <em>your night out.</em></h2><p>Sink into the good seats. Get the extra-large popcorn. Leave the group chat on read for two hours. That kind of night.</p><a href="#movies" class="text-link light-link">Find your next escape <span aria-hidden="true">↗</span></a></div><div class="experience-stamp"><span>LIGHTS DOWN</span><b>✳</b><span>WORLD OFF</span></div></div></section>
+
+    <section class="offer-section page-wrap" id="offers"><div class="offer-card"><div class="offer-left"><div class="eyebrow dark">A SMALL TREAT FROM US</div><h2>Good nights<br>come with <em>perks.</em></h2><p>Sign up for your first booking and get ₹150 off the popcorn-sized feeling.</p><form class="offer-form" id="offerForm"><label class="visually-hidden" for="offerEmail">Email address</label><input id="offerEmail" type="email" placeholder="Your email address" required><button type="submit">Count me in <span aria-hidden="true">↗</span></button></form><div class="offer-note" id="offerNote">By joining, you agree to occasional notes about very good films.</div></div><div class="offer-art"><div class="ticket-shape"><div class="ticket-kicker">YOUR FIRST NIGHT</div><div class="ticket-save">₹150<span> OFF</span></div><div class="ticket-stub"><span>REELHOUSE</span><span>✳ &nbsp; GOOD TIMES AHEAD</span></div></div><div class="offer-spark spark-one">✳</div><div class="offer-spark spark-two">✧</div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="page-wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M5 3.9 18.2 11 5 18.1V3.9Z" fill="currentColor"/><path d="M3.3 2.5h15.4v17H3.3z" stroke="currentColor" stroke-width="1.6"/></svg></span><span>reelhouse<span class="brand-period">.</span></span></a><p class="footer-thought">For the stories we share,<br>and the nights we remember.</p><div class="footer-links"><div><span class="footer-label">DISCOVER</span><a href="#movies">Now showing</a><a href="#experience">The experience</a><a href="#offers">Offers</a></div><div><span class="footer-label">THE HOUSE</span><a href="#top">About us</a><a href="#top">Get in touch</a><a href="#top">Help & FAQs</a></div></div><div class="footer-social"><span class="footer-label">FOLLOW THE FEELING</span><div><a href="#top" aria-label="Instagram">ig ↗</a><a href="#top" aria-label="YouTube">yt ↗</a><a href="#top" aria-label="X">x ↗</a></div></div></div><div class="page-wrap footer-bottom"><span>© 2026 REELHOUSE CINEMAS</span><span>MADE FOR THE MOMENT <b>✳</b></span><span>PRIVACY &nbsp; · &nbsp; TERMS</span></div></footer>
+
+  <div class="modal-root" id="modalRoot" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
